@@ -1,5 +1,5 @@
-============== *DevSecOps* ==============
+# ============== *Aula 02* ==============
 
-* Implementando a segurança no mundo DevOps
+> Aula02 - Contempla a Aula Prática de SonarQube
+           _Conteúdo básico_: Procedimento de Instalação do Jenkins, Docker e SonarQu, Links de Repositórios Utilizados em Aula.
 
-============================================
