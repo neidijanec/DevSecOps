@@ -1,0 +1,7 @@
+Máquina: Gauntlt
+Procedimento de Instalação:
+
+	apt install ruby rubygems ruby-dev dirb python nmap
+	git clone https://github.com/gauntlt/gauntlt.git
+	cd gauntlt/
+	source install_gauntlt_deps.sh
