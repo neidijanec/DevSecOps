@@ -1,5 +1,4 @@
-============== *DevSecOps* ==============
+#============== *Aula 04* ==============
 
-* Implementando a segurança no mundo DevOps
-
-============================================
+- Aula04 - Contempla a Aula Prática de ELK
+  - *Conteúdo geral*: Procedimento de Instalação da Stack ELK e do LogStack(separadamente), Edições necessárias nos arquivos de configuração.
