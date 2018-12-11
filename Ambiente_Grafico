@@ -1,0 +1,5 @@
+Máquina: Jenkins
+
+#Instalação:
+- apt install lxde xinit 
+- startx &
