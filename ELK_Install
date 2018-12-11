@@ -1,0 +1,7 @@
+Máquina: ELK
+Procedimento de Instalação:
+
+	wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add -
+	apt update && apt-get install apt-transport-https openjdk-8-jre -y
+	echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
+	apt update && apt install -y kibana logstash elasticsearch
