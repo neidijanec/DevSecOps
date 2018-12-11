@@ -1,5 +1,4 @@
-============== *DevSecOps* ==============
+# ============== *AULA 06* ==============
 
-* Implementando a segurança no mundo DevOps
-
-============================================
+- Aula06 - Contempla a Aula Prática de Ansible Hardening e Gauntlt
+  - *Conteúdo geral*: Links de Hardenings Conhecidos, Procedimento de Instalação do Gauntlt
