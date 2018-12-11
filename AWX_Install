@@ -1,4 +1,5 @@
 Máquina: Docker
+Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
 Procedimento de Instalação:
 
 	yum install ansible python python-pip
