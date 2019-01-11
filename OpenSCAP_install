@@ -1,0 +1,3 @@
+#INSTALAÇÃO
+	
+	yum install openscap-scanner scap-security-guide scap-workbench -y
