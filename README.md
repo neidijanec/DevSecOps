@@ -1,5 +1,4 @@
-============== *DevSecOps* ==============
+# ============== *AULA 06* ==============
 
-* Implementando a segurança no mundo DevOps
-
-============================================
+- Aula07 - Contempla a Aula Prática de Gerrit e Docker Clair
+  - *Conteúdo geral*: Procedimento de Instalação do Gerrit e Docker Clair
