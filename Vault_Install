@@ -7,6 +7,7 @@
 	cp vault /usr/bin
 
 [CLIENT - SSH HELPER]
+Máquina: Gautlt
 
 	wget https://releases.hashicorp.com/vault-ssh-helper/0.1.4/vault-ssh-helper_0.1.4_linux_amd64.zip
 	unzip vault-ssh-helper_0.1.4_linux_amd64.zip
