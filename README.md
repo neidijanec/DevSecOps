@@ -1,5 +1,5 @@
-============== *DevSecOps* ==============
+# ============== *AULA 08* ==============
 
-* Implementando a segurança no mundo DevOps
+- Aula08 - .
+  - **Conteúdo Geral**: .
 
-============================================
