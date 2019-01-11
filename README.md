@@ -1,5 +1,4 @@
-============== *DevSecOps* ==============
+# ============== *AULA 01* ==============
 
-* Implementando a segurança no mundo DevOps
-
-============================================
+- Aula09 - Contempla a Aula Prática de Vault / OpenScap
+  - *Contéudo geral*: Procedimento de Instalação do Vault e OpenScap, Instalação e Configuração do MySQL, Instalação de Ambiente Gráfico e Arquivos de Configurações.
