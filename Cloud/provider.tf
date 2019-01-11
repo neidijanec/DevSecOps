@@ -5,8 +5,6 @@ provider "google" {
   region      = "us-central1"
 }
 
-
-//importando as instancias que ja existem
 resource "google_project" "devsecops" {
   name = "DevSecOps"
   project_id = "devsecops-212714"
@@ -19,7 +17,7 @@ data "google_iam_policy" "admin" {
     role = "roles/compute.instanceAdmin"
 
     members = [
-      "user:gabriel.araujo@4linux.com.br",
+      "user:4linux@4linux.com.br",
     ]
   }
 }
@@ -51,4 +49,3 @@ metadata_startup_script = "apt-get update && apt-get install nginx -y && echo 'S
 
 
 }
-
