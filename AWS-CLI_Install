@@ -1,0 +1,5 @@
+#Instalação
+
+ apt install awscli
+ pip install awscli --upgrade --user
+ pip install boto
