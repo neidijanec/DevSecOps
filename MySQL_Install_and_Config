@@ -1,0 +1,13 @@
+Máquina: Gauntlt
+
+#INSTALAÇÃO
+ apt install mysql-server
+
+#CONFIGURAÇÃO
+ Editar o arquivo /etc/mysql/mysql.conf.d/mysqld.cnf: bind-address = 0.0.0.0
+ Crie o usuário no MySQL:
+	 CREATE USER '4linux'@'localhost' IDENTIFIED BY '4linux';
+	 GRANT ALL PRIVILEGES ON *.* TO '4linux'@'localhost' WITH GRANT OPTION;
+	 CREATE USER '4linux'@'%' IDENTIFIED BY '4linux';
+	 GRANT ALL PRIVILEGES ON *.* TO '4linux'@'%' WITH GRANT OPTION;
+
