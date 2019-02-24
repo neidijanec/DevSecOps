@@ -1,0 +1,3 @@
+Máquina:
+
+> INSTALAÇÃO: apt install apache2 libapache2-mod-security2 -y
