@@ -1,7 +1,7 @@
 Máquina: AUDIT
 
-#INSTALAÇÃO DO XFCE
+> Procedimentos: 
 
-	yum -y groupinstall X11
-	yum --enablerepo=epel -y groups install "Xfce"
-	echo "exec /usr/bin/xfce4-session" >> ~/.xinitrc 
+		yum -y groupinstall X11
+		yum --enablerepo=epel -y groups install "Xfce"
+		echo "exec /usr/bin/xfce4-session" >> ~/.xinitrc 
