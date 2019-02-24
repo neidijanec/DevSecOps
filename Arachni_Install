@@ -1,3 +1,6 @@
 - Máquina: Jenkins
-- Acessar: https://github.com/Arachni/arachni/releases/ 
-	       Baixar Latest release (arachni-<version>-linux-x86_64.tar.gz)
+
+- Procedimentos:
+
+  			Acessar  https://github.com/Arachni/arachni/releases/ 
+	       	Baixar Latest release (arachni-<version>-linux-x86_64.tar.gz)
