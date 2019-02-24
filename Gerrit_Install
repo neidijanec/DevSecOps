@@ -1,5 +1,7 @@
-#Instalação
+Máquina: GAUNTLT
 
-	apt install openjdk-8-jre
-	wget https://www.gerritcodereview.com/download/gerrit-2.15.1.war
-	java -jar gerrit*.war init --batch --dev -d /opt/gerrit   
+> Procedimentos:
+
+		apt install openjdk-8-jre
+		wget https://www.gerritcodereview.com/download/gerrit-2.15.1.war
+		java -jar gerrit*.war init --batch --dev -d /opt/gerrit   
