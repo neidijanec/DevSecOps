@@ -1,3 +1,5 @@
-#INSTALAÇÃO
-	
-	yum install openscap-scanner scap-security-guide scap-workbench -y
+Máquina: Audit
+
+> Procedimento:
+
+		yum install openscap-scanner scap-security-guide scap-workbench -y
