@@ -1,13 +1,14 @@
 Máquina: Docker
+
 Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
-Procedimento de Instalação:
+Procedimentos:
 
-	yum install ansible python python-pip
-	pip install docker
+		yum install ansible python python-pip
+		pip install docker
 
-	Projeto AWX: https://github.com/ansible/awx 
-				 RELEASE → Buscar versão mais atual em formato tar.gz
-				 wget https://github.com/ansible/awx/archive/<versao>.tar.gz
+		Projeto AWX: https://github.com/ansible/awx 
+					 	RELEASE → Buscar versão mais atual em formato tar.gz
+						wget https://github.com/ansible/awx/archive/<versao>.tar.gz
 
-	tar xf <versao>.tar.gz
-	cd awx-<versao>/installer/
+		tar xf <versao>.tar.gz
+		cd awx-<versao>/installer/
