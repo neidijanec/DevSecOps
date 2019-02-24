@@ -1,5 +1,7 @@
-#Instalação
+Máquina: Vault
 
- apt install awscli
- pip install awscli --upgrade --user
- pip install boto
+> Procedimentos:
+
+		apt install awscli
+		pip install awscli --upgrade --user
+		pip install boto
