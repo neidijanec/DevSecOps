@@ -1,6 +1,8 @@
-#INSTALAÇÃO
+Máquina: Vault
 
- apt install wget unzip -y
- wget https://releases.hashicorp.com/terraform/0.11.10/terraform_0.11.10_linux_amd64.zip
- unzip terraform_0.11.10_linux_amd64.zip
- cp terraform /usr/bin
+> Procedimentos:
+
+		apt install wget unzip -y
+		wget https://releases.hashicorp.com/terraform/0.11.10/terraform_0.11.10_linux_amd64.zip
+		unzip terraform_0.11.10_linux_amd64.zip
+		cp terraform /usr/bin
