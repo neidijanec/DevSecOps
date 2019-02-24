@@ -1,5 +1,5 @@
 Máquina: Audit
 
-#INSTALAÇÃO
-	Adicione o repositório bintray-kong-kong-community-edition-rpm.repo em /etc/yum.repos.d/
-	yum install --nogpgcheck kong-community-edition -y
+> Procedimento:
+		Adicione o repositório bintray-kong-kong-community-edition-rpm.repo em /etc/yum.repos.d/
+		yum install --nogpgcheck kong-community-edition -y
