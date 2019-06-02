@@ -2,5 +2,5 @@ Máquina: Jenkins
 
 > Procedimentos: 
 
-		apt install lxde xinit 
+		apt install fluxbox 
 		startx &
