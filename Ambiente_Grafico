@@ -2,5 +2,5 @@ Máquina: Jenkins
 
 > Procedimentos: 
 
-		apt install fluxbox 
+		apt install fluxbox xinit -y
 		startx &
