@@ -3,4 +3,4 @@ Máquina: Gauntlt
 Procedimentos:
 
 		apt install ruby rubygems ruby-dev dirb python nmap
-                gem install gauntlt
+		gem install gauntlt
