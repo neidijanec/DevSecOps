@@ -2,5 +2,5 @@ Máquina: Gauntlt
 
 Procedimentos:
 
-		apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g
-		gem install gauntlt
+		apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g build-essential
+		gem install rake gauntlt
