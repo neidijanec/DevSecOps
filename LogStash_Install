@@ -3,5 +3,5 @@ Máquina: DOCKER
 Procedimento:
 
 		yum install wget java httpd
-		wget https://artifacts.elastic.co/downloads/logstash/logstash-6.5.1.rpm
-		rpm -ivh logstash-6.5.1.rpm
+		wget https://artifacts.elastic.co/downloads/logstash/logstash-7.2.0.rpm
+		rpm -ivh logstash-7.2.0.rpm
