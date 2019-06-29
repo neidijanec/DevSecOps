@@ -4,7 +4,7 @@ Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
 Procedimentos:
 
 		yum install ansible python python-pip
-		pip install docker
+		pip install docker docker-compose
 
 		Projeto AWX: https://github.com/ansible/awx 
 					 	RELEASE → Buscar versão mais atual em formato tar.gz
