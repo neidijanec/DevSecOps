@@ -5,6 +5,19 @@ Procedimentos:
 --------------
 
    Projeto: http://gauntlt.org/
-   apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g build-essential
+
+   ### Like Debian
+   apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g build-essential -y
    gem install rake gauntlt
    git clone https://github.com/gauntlt/gauntlt.git
+
+   ### Like RedHat - Fedora
+   dnf install wget ruby rubygems ruby-devel python nmap gem -y
+   dnf groupinstall "Development Tools" "Development Libraries" -y
+   gem install rake gauntlt
+   git clone https://github.com/gauntlt/gauntlt.git
+
+   - Instalando o DIRB
+     Acessar: https://fedora.pkgs.org/30/atomic-x86_64/ e Baixar RPM do DIRB
+     wget dirb-222-6934.fc30.art.x86_64.rpm
+     rpm -ivh dirb-222-6934.fc30.art.x86_64.rpm
