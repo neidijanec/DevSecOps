@@ -1,14 +1,11 @@
-Máquina: Docker
+Máquina: automation
+-------------------
 
-Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
 Procedimentos:
+--------------
 
-		yum install ansible python python-pip
-		pip install docker docker-compose
-
-		Projeto AWX: https://github.com/ansible/awx 
-					 	RELEASE → Buscar versão mais atual em formato tar.gz
-						wget https://github.com/ansible/awx/archive/<versao>.tar.gz
-
-		tar xf <versao>.tar.gz
-		cd awx-<versao>/installer/
+   Projeto AWX: https://github.com/ansible/awx 
+   Acessar https://github.com/ansible/awx/releases e baixar a versão mais atual em formato tar.gz 
+    wget https://github.com/ansible/awx/archive/<versao>.tar.gz
+    tar xf <versao>.tar.gz
+    cd awx-<versao>/installer/
