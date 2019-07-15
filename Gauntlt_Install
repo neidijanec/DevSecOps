@@ -1,7 +1,10 @@
-Máquina: Gauntlt
+Máquina: validation
+-------------------
 
 Procedimentos:
+--------------
 
-		apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g build-essential
-		gem install rake gauntlt
-		git clone https://github.com/gauntlt/gauntlt.git
+   Projeto: http://gauntlt.org/
+   apt install ruby rubygems ruby-dev dirb python nmap gem zlib1g-dev zlib1g build-essential
+   gem install rake gauntlt
+   git clone https://github.com/gauntlt/gauntlt.git
