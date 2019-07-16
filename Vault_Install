@@ -1,18 +1,25 @@
-[SERVER]
-Máquina: Vault
+Máquina: logging - [SERVER]
+---------------------------
 
->Procedimentos:
-		wget https://releases.hashicorp.com/vault/0.11.5/vault_0.11.5_linux_amd64.zip
-		apt install unzip
-		unzip vault_0.11.5_linux_amd64.zip
-		cp vault /usr/bin
+Procedimentos:
+--------------
+
+   Projeto: https://www.vaultproject.io/ - Baixar última versão
+
+   wget https://releases.hashicorp.com/vault/<version>/vault_<version>_linux_amd64.zip
+   apt install unzip
+   unzip vault_<version>_linux_amd64.zip
+   cp vault /usr/bin
 
 
-[CLIENT - SSH HELPER]
-Máquina: Gautlt
+Máquina: validation - [CLIENTE - SSH Helper]
+--------------------------------------------
 
->Procedimentos:
+Procedimentos:
+--------------
 
-		wget https://releases.hashicorp.com/vault-ssh-helper/0.1.4/vault-ssh-helper_0.1.4_linux_amd64.zip
-		unzip vault-ssh-helper_0.1.4_linux_amd64.zip
-		cp vault-ssh-helper /usr/bin/
+   Acessar https://releases.hashicorp.com/vault-ssh-helper/ e Download da última versão
+
+   wget https://releases.hashicorp.com/vault-ssh-helper/<version>/vault-ssh-helper_<version>_linux_amd64.zip
+   unzip vault-ssh-helper_<version>_linux_amd64.zip
+   cp vault-ssh-helper /usr/bin/
