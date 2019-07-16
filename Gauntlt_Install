@@ -19,15 +19,8 @@ Procedimentos:
    git clone https://github.com/gauntlt/gauntlt.git
 
    ### Like Suse
-   zypper install ruby rubygems ruby-devel rubygem-rvm python python-pip nmap 
+   zypper install ruby rubygems ruby-devel rubygem-rvm python python-pip nmap go libcurl-devel 
    zypper install --type pattern devel_basis
    gem install rake gauntlt 
    alias gauntlt=gauntlt.ruby2.5
    git clone https://github.com/gauntlt/gauntlt.git 
-
-   - Instalando o DIRB (Apenas para Fedora ou OpenSuse)
-     Acessar: https://fedora.pkgs.org/30/atomic-x86_64/ e Baixar RPM do DIRB
-     wget dirb-222-6934.fc30.art.x86_64.rpm
-     rpm -ivh dirb-222-6934.fc30.art.x86_64.rpm
-     git clone https://github.com/v0re/dirb.git
-     export DIRB_WORDLISTS=/root/dirb/wordlists/
