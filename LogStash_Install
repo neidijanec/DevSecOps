@@ -1,4 +1,4 @@
-Máquina: automation
+Máquina: validation
 -------------------
 
 Procedimento:
@@ -15,3 +15,9 @@ Procedimento:
    yum install wget java httpd
    wget https://artifacts.elastic.co/downloads/logstash/logstash-<version>.rpm
    rpm -ivh logstash-<version>.rpm
+
+   ### Like Suse
+   zypper install wget java httpd
+   wget https://artifacts.elastic.co/downloads/logstash/logstash-<version>.rpm
+   rpm -ivh logstash-<version>.rpm
+
