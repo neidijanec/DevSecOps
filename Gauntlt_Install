@@ -19,8 +19,8 @@ Procedimentos:
    git clone https://github.com/gauntlt/gauntlt.git
 
    ### Like Suse
-   zypper install ruby ruby-devel python python2-pip nmap go libcurl-devel git
-   zypper install --type pattern devel_basis
+   zypper -n install ruby ruby-devel python python2-pip nmap go libcurl-devel git
+   zypper -n install --type pattern devel_basis
    gem install rake gauntlt 
    alias gauntlt=gauntlt.ruby2.5
    git clone https://github.com/gauntlt/gauntlt.git 
