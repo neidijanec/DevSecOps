@@ -1,4 +1,4 @@
-Máquina: automation
+Máquina: validation
 -------------------
 
 Procedimento:
@@ -11,7 +11,7 @@ Procedimento:
    wget https://artifacts.elastic.co/downloads/logstash/logstash-<version>.deb
    dpkg -i logstash-<version>.deb
    
-   ### Like RedHat   
-   yum install wget java httpd
+   ### Like Suse   
+   zypper -n install java-1_8_0-openjdk java-1_8_0-openjdk-headless javapackages-tools
    wget https://artifacts.elastic.co/downloads/logstash/logstash-<version>.rpm
    rpm -ivh logstash-<version>.rpm
