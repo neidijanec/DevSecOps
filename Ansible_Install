@@ -7,7 +7,7 @@ Procedimentos:
   Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
 
   ##Like Debian - Ubuntu
-  apt update ; apt install software-properties-common
+  apt update ; apt install software-properties-common python-pip
   apt-add-repository --yes --update ppa:ansible/ansible
   apt-get install ansible
 
