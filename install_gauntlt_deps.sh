@@ -2,9 +2,11 @@
 cd /opt/
 
 # install sslyze
-pip install sslyze
+echo "Installing SSLYZE"
+pip -q install sslyze
 
-# install Go, Heartbleed
+# install Heartbleed
+echo "Installing Heartbleed"
 export GOPATH=/root/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
@@ -17,16 +19,16 @@ EOF
 go get github.com/FiloSottile/Heartbleed
 
 # install dirb
+echo "Installing Dirb"
 wget -q http://www6.atomicorp.com/channels/atomic/fedora/30/x86_64/RPMS/dirb-222-6934.fc30.art.x86_64.rpm
-rpm -ivh dirb-222-6934.fc30.art.x86_64.rpm
+rpm --quiet -ivh dirb-222-6934.fc30.art.x86_64.rpm
 
 if [ ! -d /opt/dirb ]; then
-   git clone https://github.com/v0re/dirb.git
+   git clone -q https://github.com/v0re/dirb.git
 fi
 
-export DIRB_WORDLISTS=/opt/dirb/wordlists
-
 # set the environmental variables
+export DIRB_WORDLISTS=/opt/dirb/wordlists
 export SSLYZE_PATH=`which sslyze`
 
 # save environmental variables to .bashrc
@@ -35,4 +37,4 @@ cat << EOF >> /root/.bashrc
 export DIRB_WORDLISTS=/opt/dirb/wordlists
 export SSLYZE_PATH=`which sslyze`
 EOF
-source /root/.bashrc
+echo "Finished"
