@@ -9,5 +9,4 @@ Documentação:
 Procedimento:
 -------------
 
-   apt install git -y
    ansible-galaxy install git+https://github.com/openstack/ansible-hardening.git
