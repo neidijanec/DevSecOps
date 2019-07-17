@@ -6,14 +6,14 @@ Procedimentos:
 
   Documentação Ansible: http://docs.ansible.com/ansible/latest/index.html
 
-  ##Like Debian - Ubuntu
+  ### Like Debian - Ubuntu
   apt update ; apt install software-properties-common python-pip
   apt-add-repository --yes --update ppa:ansible/ansible
   apt-get install ansible
 
-  ##Like RedHat
+  ### Like RedHat
   yum install epel-release -y
   yum install ansible python python-pip
   
-  #Instalação Adicional do Modulo do Docker (AMBAS AS FAMILIAS DE DISTRIBUIÇÃO)
+  #### Instalação Adicional do Modulo do Docker (AMBAS AS FAMILIAS DE DISTRIBUIÇÃO)
   pip install docker docker-compose
