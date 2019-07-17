@@ -1,11 +1,13 @@
-* Máquina: automation
+Máquina: automation
+-------------------
 
-> Procedimentos:
+Procedimentos:
+--------------
 
-  ~Short Installation (All Systems):~
+  ## Short Installation (All Systems):~
    curl -fsSL https://get.docker.com | bash
 
-  ~Long Installation:~
+  ## Long Installation:~
    ### Like RedHat 
    yum install -y yum-utils device-mapper-persistent-data lvm2
    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
