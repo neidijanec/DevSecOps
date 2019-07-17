@@ -4,5 +4,6 @@ Máquina: automation
 Procedimento
 ------------
 
-   JUICE SHOP: https://hub.docker.com/r/bkimminich/juice-shop/
+   Projeto JUICE SHOP: https://hub.docker.com/r/bkimminich/juice-shop/
+
    docker run -d -p 3000:3000 bkimminich/juice-shop
