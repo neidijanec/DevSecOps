@@ -4,7 +4,7 @@ Máquina: testing
 Procedimentos:
 --------------
 
-* **Instalação: **
+* **Instalação:**
   ```bash
   rpm -Uvh https://yum.postgresql.org/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
   yum install postgresql10-server postgresql10
