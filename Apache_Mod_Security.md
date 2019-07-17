@@ -1,9 +1,11 @@
 Máquina: logging
 ----------------
 
-Procedimento: 
+Procedimento:
 -------------
 
-   Projeto: https://modsecurity.org/
-
-   apt install apache2 libapache2-mod-security2 -y
+* **Projeto**: https://modsecurity.org/
+* **Instalação:**
+  ```bash
+  apt install apache2 libapache2-mod-security2 -y
+  ```
