@@ -1,13 +1,15 @@
 Máquina: automation
--------------------
+===================
 
 Procedimentos:
---------------
+==============
 
-  ## Short Installation (All Systems):~
+  ## **Short Installation (All Systems)**
+   ```bash
    curl -fsSL https://get.docker.com | bash 
+   ```
 
-  ## Long Installation:~
+  ## Long Installation:
    ### Like RedHat 
    ```bash
    yum install -y yum-utils device-mapper-persistent-data lvm2 
@@ -19,7 +21,9 @@ Procedimentos:
    ```
 
    ### Like Debian
+   ```bash
    apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common 
    curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - 
    add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" 
    apt-get update ; apt-get install docker-ce 
+   ```
