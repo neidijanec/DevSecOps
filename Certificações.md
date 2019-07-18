@@ -1,12 +1,14 @@
 Certificações
 -------------
 
-DEVOPS              | 
+DEVOPS              | URL
 --------------------| -----------------------------------------------------------------
 DevOps Essential    | http://www.itcerts.com.br/devops/
 DevOps Professional | https://www.exin.com/certifications/exin-devops-professional-exam
 DevOps Master       | https://www.exin.com/certifications/exin-devops-master-exam
 LPI DevOps          | https://www.lpi.org/our-certifications/lpic-ot-devops-overview
+
+----------------------------------------------------------------------------------------
 
 SECURITY            | URL
 --------------------| -----------------------------------------------------------------
