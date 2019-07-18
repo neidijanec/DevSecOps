@@ -1,14 +1,14 @@
 Certificações
 -------------
 
-DEVOPS              |
+DEVOPS              | 
 --------------------| -----------------------------------------------------------------
 DevOps Essential    | http://www.itcerts.com.br/devops/
 DevOps Professional | https://www.exin.com/certifications/exin-devops-professional-exam
 DevOps Master       | https://www.exin.com/certifications/exin-devops-master-exam
 LPI DevOps          | https://www.lpi.org/our-certifications/lpic-ot-devops-overview
 
-SECURITY            |
+SECURITY            | URL
 --------------------| -----------------------------------------------------------------
 ISO 27001           | https://www.exin.com/certifications/information-security-foundation-based-iso-iec-27001-exam
 Security +          | https://certification.comptia.org/pt/certificações/security
