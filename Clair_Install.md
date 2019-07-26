@@ -11,6 +11,6 @@ Procedimentos:
   docker run -p 6060:6060 --link db:postgres -d --name clair arminc/clair-local-scan:v2.0.6
   ```
 
-* **Scanner: **
+* **Scanner:**
     - Acessar: https://github.com/arminc/clair-scanner/releases
     - Baixar última versão do **clair-scanner_linux_amd64**
