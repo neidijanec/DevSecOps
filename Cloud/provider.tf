@@ -1,13 +1,13 @@
 // Configurando a autenticacao no Google
 provider "google" {
   credentials = "${file("key.json")}"
-  project     = "devsecops-212714"
+  project     = "my-project-id"
   region      = "us-central1"
 }
 
-resource "google_project" "devsecops" {
+resource "google_project" "my-project" {
   name = "DevSecOps"
-  project_id = "devsecops-212714"
+  project_id = "my-project-id"
 }
 
 //Adicionando usuario para administrar instancias
@@ -46,6 +46,5 @@ boot_disk {
   }
 tags = ["http-server"]
 metadata_startup_script = "apt-get update && apt-get install nginx -y && echo 'Sou DevOps' > /var/www/html/index.html"
-
 
 }
