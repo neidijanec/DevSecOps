@@ -10,7 +10,7 @@ Procedimentos:
   ```
 
 * **CONFIGURAÇÃO:**
-  - Editar o arquivo /etc/my.cnf: `bind-address = 0.0.0.0`
+  - Editar o arquivo **/etc/my.cnf**: `bind-address = 0.0.0.0`
   -  Acessar banco: 
      ```
      mysql -u root
