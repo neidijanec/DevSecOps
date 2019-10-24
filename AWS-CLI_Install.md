@@ -37,10 +37,9 @@ wget https://raw.githubusercontent.com/yesquines/DevSecOps/Aula08/Cloud/iam.yaml
 wget https://raw.githubusercontent.com/yesquines/DevSecOps/Aula08/Cloud/financeiro.json
 wget https://raw.githubusercontent.com/yesquines/DevSecOps/Aula08/Cloud/analista.json
 
-#muda o name do grupo analists e do grupo financeiro
-
 vim iam.yaml
-#parte do conteudo do arquivo iam
+#parte do conteudo do arquivo iam.yaml
+#muda o name do grupo analists e do grupo financeiro
 - name: create user <nome1> and add group analistas
             iam:
                     iam_type: user
@@ -62,6 +61,8 @@ vim iam.yaml
                     groups: financeiro
 
 ############
+
+ansible-playbook iam.yaml
 
 
  
