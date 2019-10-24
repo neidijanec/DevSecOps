@@ -64,6 +64,12 @@ vim iam.yaml
 
 ansible-playbook iam.yaml
 
+#wget https://raw.githubusercontent.com/yesquines/DevSecOps/Aula08/Cloud/webserver.yaml
+aws iam create-access-key --user-name jedi
+aws configure
+aws ec2 describe-images --filters Name=name,Value=DevSecOps
+
+
 
  
  ```
