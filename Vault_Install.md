@@ -198,8 +198,36 @@ GRANT ALL PRIVILEGES ON *.* TO '4linux'@'%' WITH GRANT OPTION;
 root@logging:~# vault secrets enable mysql
     Success! Enabled the mysql secrets engine at: mysql/
 root@logging:~# vault write mysql/config/connection connection_url="4linux:4linux@tcp(192.168.77.40:3306)/"
+root@logging:~# vault write mysql/config/lease lease=1h lease_max=24h
+root@logging:~# vault write mysql/roles/arlequina sql="CREATE USER '{{name}}'@'%' IDENTIFIED BY '{{password}}'; GRANT SELECT ON *.* TO '{{name}}'@'%';"
+root@logging:~# vault read mysql/creds/arlequina
+root@logging:~# vault read mysql/creds/arlequina
+Key                Value
+---                -----
+lease_id           mysql/creds/arlequina/xm5oH4jUPmrQlOsINYU2h0ah
+lease_duration     1h
+lease_renewable    true
+password           26695591-d6d7-67b3-2704-89bf115d24dd
+username           arle-root-e92e24
+##executa o comando substituindo com os valores acima
+#mysql -u <username> -h <host> -p<password>
+root@logging:~# mysql -u arle-root-e92e24 -h 192.168.77.40 -p26695591-d6d7-67b3-2704-89bf115d24dd
+## selar o vault para nao mexer mais
+vault operator seal
+logout
 
+##na maquina validation
+validation:~ # vim /etc/ssh/sshd_config
+#mudar linha  PubkeyAuthentication yes
 
+validation:~ # systemctl restart mariadb
+validation:~ # systemctl restart sshd
+validation:~ # logout
 
+#DESLIGAR VM LOGGING
+vagrant halt logging
+
+##ACESSAR TESTING
+vagrant up testing --provision
 
  ```
