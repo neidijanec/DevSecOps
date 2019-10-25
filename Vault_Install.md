@@ -145,6 +145,59 @@ vim config.hcl
   allowed_roles = "nome_role"
 ####
 cat config.hcl
+ vault-ssh-helper -dev -verify-only -config /etc/vault_helper/config.hcl
+vim /etc/pam.d/sshd
+## conteudo do arquivo acima ficará assim:
+  #%PAM-1.0
+  auth        requisite   pam_nologin.so
+  #auth        include     common-auth
+  auth requisite pam_exec.so quiet expose_authtok log=/var/log/helper.log /bin/vault-ssh-helper -dev -config=/etc/vault_helper/config.hcl
+  auth optional pam_unix.so not_set_pass use_first_pass nodelay
+  account     requisite   pam_nologin.so
+  account     include     common-account
+  password    include     common-password
+  session     required    pam_loginuid.so
+  session     include     common-session
+  session     optional    pam_lastlog.so   silent noupdate showfailed
+  session     optional    pam_keyinit.so   force revoke
+##
+vim /etc/ssh/sshd_config
+## #### 
+ PermitRootLogin yes
+ PubkeyAuthentication no
+PasswordAuthentication no
+UsePAM yes
+########
+ systemctl restart sshd
+
+### vou na maquina logging
+
+ssh root@192.168.77.40
+logout
+vault ssh -role nome_role -mode otp root@192.168.77.40
+#pega o token cola
+#vai rodar
+depois dar logout
+
+## no validation
+zypper -n install mariadb mariadb-server
+systemctl start mariadb
+grep bind /etc/my.cnf
+vim /etc/my.cnf
+colocs o ip 0.0.0.0 SALVA e SAI
+systemctl restart mariadb
+mysql
+#CONFIGURAÇÃO DO MYSQL
+#digita linha por linha
+CREATE USER '4linux'@'localhost' IDENTIFIED BY '4linux';
+GRANT ALL PRIVILEGES ON *.* TO '4linux'@'localhost' WITH GRANT OPTION;
+CREATE USER '4linux'@'%' IDENTIFIED BY '4linux';
+GRANT ALL PRIVILEGES ON *.* TO '4linux'@'%' WITH GRANT OPTION;
+
+## na VM Logging
+root@logging:~# vault secrets enable mysql
+    Success! Enabled the mysql secrets engine at: mysql/
+root@logging:~# vault write mysql/config/connection connection_url="4linux:4linux@tcp(192.168.77.40:3306)/"
 
 
 
