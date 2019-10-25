@@ -1,3 +1,4 @@
+
 ============== *AULA 08* ==============
 ---------------------------------------
 
@@ -20,6 +21,14 @@ root@automation:~/gcp# vim key.json
 root@automation:~/gcp# ls
 key.json
 root@automation:~/gcp# cat key.json
+
+#no site cria API
+#Biblioteca de APIs
+#digita na busca:
+cloud resource manager api
+compute engine api
+
+
 root@automation:~/gcp# cd ../
 root@automation:~/gcp# cd ../
 root@automation:~# unzip terraform_0.12.10_linux_amd64.zip
@@ -33,5 +42,26 @@ Your version of Terraform is out of date! The latest version
 is 0.12.12. You can update by downloading from www.terraform.io/downloads.html
 root@automation:~# cd gcp/
 root@automation:~/gcp# wget -q https://raw.githubusercontent.com/yesquines/DevSecOps/Aula08/Cloud/provider.tf
+vim provider.tf
+copia o projeto do id no arquivo acima
+## clsolucoes
+## linhas do arquivo q alterei:
+provider "google" {
+        credentials = "${file("key.json")}"
+        project     = "clsolucoes"
+        region      = "us-central1"
+}
 
+resource "google_project" "clsolucoes" {
+        name = "clsolucoes"
+        project_id = "clsolucoes"
+}
+
+terraform init
+terraform validate
+head provider.tf
+terraform import google_project.clsolucoes clsolucoes
+ls terraform.tfstate
+#planeja as acoes
+terraform plan
 ```
