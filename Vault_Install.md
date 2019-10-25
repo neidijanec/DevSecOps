@@ -106,6 +106,15 @@ Initial Root Token: s.3FHAxHryVxKqnByaeB0DMvPJ
 root@logging:~# vault login
 Token (will be hidden):<<copia e cola o Initial Root Token>>
 ##digita no browser 192.168.77.30:8200
+SECRETS ENGINER> CLICA EM > enable a secrets engine
+seleciona ssh clica no next
+path dar um nome ou deixa ssh
+coloca descrição
+configura tempo etc
+depois clica em enable engine
+vai abrir a pagina q tem roles e configuration
+create role
+Nome Roler
 
 
  ```
