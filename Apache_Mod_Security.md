@@ -69,5 +69,10 @@ Procedimento:
   ##executa no browser
     #Slack  https://join.slack.com/t/mildevsecops/shared_invite/enQtNzk3MTg2OTY5MTU0LTNiNGRiMDcwNWMwNDNmM2NjY2M0NWQ0MTUwZDQyNjc0ZDRiMWMzMWNmYWY5YTZkYjNjZjY3ZTBmOTVkMjg2NmM
   
-  
+  systemctl start elasticsearch
+  elastalert-create-index
+  Enter Elasticsearch host:
+  "192.168.77.30"
+  Enter Elasticsearch port: 9200
+  Use SSL? t/f: "f"
    ```
