@@ -66,6 +66,8 @@ Procedimento:
   
   pip install "elastalert>=0.2.0b"
   
+  ##executa no browser
+    #Slack  https://join.slack.com/t/mildevsecops/shared_invite/enQtNzk3MTg2OTY5MTU0LTNiNGRiMDcwNWMwNDNmM2NjY2M0NWQ0MTUwZDQyNjc0ZDRiMWMzMWNmYWY5YTZkYjNjZjY3ZTBmOTVkMjg2NmM
   
   
    ```
