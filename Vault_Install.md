@@ -81,6 +81,31 @@ tail /var/log/vault.log
 
 root@logging:/etc/vault# export VAULT_ADDR=http://192.168.77.30:8200
 root@logging:/etc/vault# export VAULT_API_ADDR=http://192.168.77.30:8200
+root@logging:/etc/vault# cd
+root@logging:~# vault operator init > vault_init.txt
+root@logging:~# vim vault_init.txt
+###dentro desse arquivo tem chaves de seguranca, q temos q usar 3 delas 
+##contem tbm a  chave para acessar o usuario root
+
+root@logging:~# head -n5 vault_init.txt
+
+  Unseal Key 1: iTE1KFg2+pDKI81O4iISXyxlQNF1eoYmJkvLx6hkJ9XY
+  Unseal Key 2: +m71Jimec/B+d1vJ0xaJBP5zHMRDQMHtj/GPm00Y1dKh
+  Unseal Key 3: Y39wILCZSrM92KrxqmJrlzu4GdSTgBUDb0jeqgC77Qsw
+  Unseal Key 4: XTGXboXi/hRZadsa8jSgtFFrzailNpsVmzC5CO1oC250
+  Unseal Key 5: Shi2SjPxnB9Gll/WUynnXYvV55Fxy0kWL+UEwrgHJWMR
+
+#rodar esse comando abaixo 3 vezes, na terceira vez vai aparecer Sealed false
+root@logging:~# vault operator unseal
+  Unseal Key (will be hidden): <colar uma chave aki>
+
+## depois q destrava vamos rodar usuario root
+root@logging:~# grep root vault_init.txt
+root@logging:~# grep -i root vault_init.txt
+Initial Root Token: s.3FHAxHryVxKqnByaeB0DMvPJ
+root@logging:~# vault login
+Token (will be hidden):<<copia e cola o Initial Root Token>>
+##digita no browser 192.168.77.30:8200
 
 
  ```
