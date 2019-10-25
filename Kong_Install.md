@@ -19,18 +19,18 @@ Procedimento:
 	[root@testing ~]# su - postgres
 	-bash-4.2$ psql -c "create user kong with password '4linux';"
 	CREATE ROLE
-	-bash-4.2$psql -c "create database kong owner kong;"
+	-bash-4.2$ psql -c "create database kong owner kong;"
 	CREATE DATABASE
 	-bash-4.2$ vim 10/data/pg_hba.conf
-	#Na linha 82 troca ident por trust, salva e sai
-	logout
-	systemctl restart postgresql-10
-	kong migrations bootstrap
-	kong migrations up
-	kong start
+	### ao abrir o arquivo pg_hba.conf, Na linha 82 troca ident por trust, salva e sai
+	-bash-4.2$ logout
+	[root@testing ~]# systemctl restart postgresql-10
+	[root@testing ~]# kong migrations bootstrap
+	[root@testing ~]# kong migrations up
+	[root@testing ~]# kong start
 	#mostra os limites de configuração que podem serem feitos no sistema kong
-	ulimit -a
-	ss -lntp | egrep "(80|84)[0-9]{2}"
+	[root@testing ~]# ulimit -a
+	[root@testing ~]# ss -lntp | egrep "(80|84)[0-9]{2}"
 
 	
 
