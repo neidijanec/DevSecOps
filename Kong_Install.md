@@ -32,6 +32,19 @@ Procedimento:
 	[root@testing ~]# ulimit -a
 	[root@testing ~]# ss -lntp | egrep "(80|84)[0-9]{2}"
 
-	
+	#### simulando  novo serviço e criar rota pra ele
+	curl -X POST http://localhost:8001/services -d 'name=desafiador' -d 'url=http://mockbin.org/'
+
+	curl -X POST -i http://localhost:8001/services/desafiador/routes -d 'hosts[]=desafiador'
+
+	curl -X GET -i http://localhost:8000/ -H 'Host: desafiador'
+
+	curl -i -X POST http://localhost:8001/services/desafiador/plugins -d 'name=key-auth'
+
+	curl -i -X POST http://localhost:8001/consumers/ -d 'username=darkside'
+
+	curl -i -X POST http://localhost:8001/consumers/darkside/key-auth -d 'key=4linux'
+
+	curl -X GET -i http://localhost:8000/ -H 'Host: desafiador' -H 'apikey: 4linux'
 
  ```
