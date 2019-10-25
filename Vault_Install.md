@@ -52,10 +52,19 @@ chown -R consul.consul /var/consul/
 mkdir /etc/consul/
 vim /etc/consul/consul.hcl
 ##digita no arquivo
+{
+        "server": true,
+        "bootstrap": true,
+        "bootstrap_expect": 1,
+        "node_name":"consul",
+        "data_dir":"/var/consul/data",
+        "bind_addr":"127.0.0.1",
+}
 
 ##
 consul agent -config-file /etc/consul/consul.hcl  &>> /var/log/consul.log &
 tail -f /var/log/consul.log
+## PARA VERIFICAR O CONTEUDO DO ARQUIVO AXECUTA COMANDO ABAIXO:
 cat /var/log/consul.log
 
 root@logging:~# mkdir /etc/vault
@@ -106,20 +115,38 @@ Initial Root Token: s.3FHAxHryVxKqnByaeB0DMvPJ
 root@logging:~# vault login
 Token (will be hidden):<<copia e cola o Initial Root Token>>
 ##digita no browser 192.168.77.30:8200
-SECRETS ENGINER> CLICA EM > enable a secrets engine
-seleciona ssh clica no next
-path dar um nome ou deixa ssh
-coloca descrição
-configura tempo etc
-depois clica em enable engine
-vai abrir a pagina q tem roles e configuration
-create role
-Nome Roler
-CIDR List
- 192.168.77.0/24
-Port 22
-key type otp >> ele faz a senha ser uma a cada vez
-clica em criar
+#SECRETS ENGINER> CLICA EM > enable a secrets engine
+#seleciona ssh clica no next
+#path dar um nome ou deixa ssh
+#coloca descrição
+#configura tempo etc
+#depois clica em enable engine
+#vai abrir a pagina q tem roles e configuration
+#create role
+#  Nome Roler
+#  Default Username : root
+#  CIDR List
+#     192.168.77.0/24
+#  Port 22
+#  key type otp >> ele faz a senha ser uma a cada vez
+#clica em criar
+
+agora vai na maquina validation via comando
+vagrant@validation:~> wget -c https://releases.hashicorp.com/vault-ssh-helper/0.1.4/vault-ssh-helper_0.1.4_linux_amd64.zip
+zypper -n install unzip
+unzip vault-ssh-helper_0.1.4_linux_amd64.zip
+cp vault-ssh-helper /bin/
+mkdir /etc/vault_helper/
+cd /etc/vault_helper/
+vim config.hcl
+###colocar dentro do arquiv config.hcl
+ vault_addr = "http://192.168.77.30:8200"
+  ssh_mount_point = "ssh"
+  allowed_roles = "nome_role"
+####
+cat config.hcl
+
+
 
 
  ```
