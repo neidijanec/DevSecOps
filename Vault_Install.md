@@ -115,6 +115,11 @@ depois clica em enable engine
 vai abrir a pagina q tem roles e configuration
 create role
 Nome Roler
+CIDR List
+ 192.168.77.0/24
+Port 22
+key type otp >> ele faz a senha ser uma a cada vez
+clica em criar
 
 
  ```
