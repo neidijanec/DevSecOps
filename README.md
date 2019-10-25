@@ -64,4 +64,13 @@ terraform import google_project.clsolucoes clsolucoes
 ls terraform.tfstate
 #planeja as acoes
 terraform plan
+
+
+
+#destruir as coisas
+terraform destroy -t google_compute_instance.webserver
+##
+terraform destroy
+##ou
+terraform destroy -t google_compute_instance.webserver
 ```
